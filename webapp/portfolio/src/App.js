@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {createTheme, CssBaseline, ThemeProvider, useMediaQuery} from "@mui/material";
 import {URLS} from "./constants/URLS";
 import TopBar from "./components/TopBar";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
@@ -28,8 +29,8 @@ function App() {
 const getRoutes = () => {
     return (
         <Routes>
-            <Route path={URLS.HOME} element={<Home/>}/>
-            <Route path={URLS.ABOUT} element={<About/>}/>
+            <Route path={URLS.HOME} element={<HomePage />}/>
+            <Route path={URLS.ABOUT} element={<About />}/>
         </Routes>
     );
 };
