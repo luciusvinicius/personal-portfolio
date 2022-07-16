@@ -5,6 +5,7 @@ import {createTheme, CssBaseline, ThemeProvider, useMediaQuery} from "@mui/mater
 import {URLS} from "./constants/URLS";
 import TopBar from "./components/TopBar";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -30,23 +31,9 @@ const getRoutes = () => {
     return (
         <Routes>
             <Route path={URLS.HOME} element={<HomePage />}/>
-            <Route path={URLS.ABOUT} element={<About />}/>
+            <Route path={URLS.ABOUT} element={<AboutPage />}/>
         </Routes>
     );
 };
-
-
-function Home() {
-    return <h2>Home</h2>;
-}
-
-function About() {
-    return <h2>About</h2>;
-}
-
-function Users() {
-    return <h2>Users</h2>;
-}
-
 
 export default App;
